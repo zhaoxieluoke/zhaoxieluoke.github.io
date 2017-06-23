@@ -93,7 +93,7 @@
 <meta name="keywords" content="前端博客,JavaScript,html5,css3,Jquery,NodeJs,朝些罗可,zhaoxieluoke（#博客关键字）">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
-<meta property="og:url" content="http://zhaoxieluoke.github.io/index.html">
+<meta property="og:url" content="http://zhaoxieluoke.github.io/archives/2017/06/index.html">
 <meta property="og:site_name" content="Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog">
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://zhaoxieluoke.github.io/"/>
+  <link rel="canonical" href="http://zhaoxieluoke.github.io/archives/2017/06/"/>
 
 
 
 
 
-  <title>Blog</title>
+  <title>归档 | Blog</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -155,9 +155,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left  page-archive  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -284,389 +282,67 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      嗯..! 目前共计 3 篇日志。 继续努力。
+    </span>
+
     
+
+      
+      
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhaoxieluoke.github.io/2017/06/23/webpack_es6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhaoxieluoke">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/2017-05-04_103914.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/06/23/webpack_es6/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-23T11:58:38+08:00">
-                2017-06-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-          
-            <h1 id="用webpack来构建es6编译环境"><a href="#用webpack来构建es6编译环境" class="headerlink" title="用webpack来构建es6编译环境"></a>用webpack来构建es6编译环境</h1><p>## </p>
-<blockquote>
-<p>创建项目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure></p>
-<p>安装babel webpack<br>webpack-derv-server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install babel-core babel-loader babel-preset-es2015 webpack webpack-dev-server  --save-dev</div></pre></td></tr></table></figure></p>
-<p>配置scripts  test为默认命令 build为要使用的命令 在命令中同时对webpack-dev-server 进行配置 端口 热加载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&quot;scripts&quot;:&#123;</div><div class="line">      &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,    </div><div class="line">      &quot;build&quot;:&quot;webpack-dev-server --port 8397 --hot --inline&quot;,  </div><div class="line">  &#125;</div></pre></td></tr></table></figure></p>
-<p>创建webpack.config.js文件进行配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">var webpack = require(&apos;webpack&apos;);</div><div class="line"> var path = require(&apos;path&apos;);</div><div class="line"> module.exports = &#123;</div><div class="line">     entry:&apos;./src/index.js&apos;, // 输出文件入口</div><div class="line">     output:&#123;    // 输出路径</div><div class="line">         path:__dirname, // 取得当前目录路径</div><div class="line">         filename:&apos;bundle.js&apos; // 输出文件路径、文件名</div><div class="line">     &#125;,</div><div class="line">     module:&#123;    // 加载模块插件</div><div class="line">         loaders:[   // 加载器 插件</div><div class="line">             &#123;</div><div class="line">                 test:/\.css$/,  // 正则匹配css文件</div><div class="line">                 loader: &quot;babel-loader&quot;,   //</div><div class="line">                 exclude:&apos;/node_module/&apos; ,// 排除的文件夹</div><div class="line">                 query:&#123;</div><div class="line">                       presets:[&quot;es2015&quot;]</div><div class="line">                 &#125;</div><div class="line">                 /*include:&apos;/app/&apos;       // 多个就用数组*/</div><div class="line">             &#125;</div><div class="line">         ]</div><div class="line">      &#125;</div><div class="line">   //   devServer: &#123;</div><div class="line">   //         //  contentBase: &quot;./public&quot;,//本地服务器所加载的页面所在的目录</div><div class="line">   //         port: 6666, //端口</div><div class="line">   //         historyApiFallback: true,//不跳转</div><div class="line">   //         inline: true//实时刷新</div><div class="line">   //   &#125;</div><div class="line"> &#125;;</div></pre></td></tr></table></figure></p>
-<p><em>可选</em> 创建.babelrc文件 进行预设 (<strong>如果在package.json文件中进行过预设则，这个文件可以省略–</strong>)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;presets&quot;:[&quot;es2015&quot;]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>最后执行npm run build 打开浏览器输入localhost:端口号 进行查看</p>
-</blockquote>
-<font style="color:#666">*注: npm指可用cnpm替换，具体方法请自行搜索，此处不再赘述 </font>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhaoxieluoke.github.io/2017/05/17/mind/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhaoxieluoke">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/2017-05-04_103914.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2017/06/23/webpack_es6/" itemprop="url">
               
-                
-                <a class="post-title-link" href="/2017/05/17/mind/" itemprop="url">
-                  怎么样才能培养自己拥有宽广的胸襟，不至于太过狭隘，太小家子气?
-                </a>
+                <span itemprop="name">未命名</span>
               
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-17T12:51:21+08:00">
-                2017-05-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><em>知乎 怎么样才能培养自己拥有宽广的胸襟，不至于太过狭隘，太小家子气?<br>这个问题下周筠的回答</em><br></p>
-<blockquote>
-<p>曾经在幽幽暗暗反反复复中追问<br>才知道平平淡淡从从容容是最真——姜育恒《再回首》</p>
-</blockquote>
-<p><font size="3">坏消息：宽广的胸襟，一定程度上和天性有关。<br>好消息：后天的努力，能够改善自己的胸襟。<br>不妨经常拿起笔来这样自问自答：</font><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/05/17/mind/#more" rel="contents">
-              阅读全文 &raquo;
             </a>
-          </div>
-          <!--/noindex-->
         
-      
-    </div>
+      </h1>
 
-    <div>
-      
-    </div>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-06-23T11:58:38+08:00"
+              content="2017-06-23" >
+          06-23
+        </time>
+      </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zhaoxieluoke.github.io/2017/05/03/today/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zhaoxieluoke">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/2017-05-04_103914.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
 
     
-      <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/03/today/" itemprop="url">
-                  today
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-03T14:02:16+08:00">
-                2017-05-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>It’s is such a beautiful day<br><img src="https://i4.buimg.com/567571/b38a6afe402d3ea9.jpg" alt=""></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=4341314&auto=0&height=66"></iframe>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+
 
 
           </div>
@@ -851,6 +527,12 @@
   
 
   
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   
 
