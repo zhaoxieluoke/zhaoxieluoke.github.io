@@ -7,8 +7,9 @@ title: Blog
 subtitle:
 description:
 author: zhaoxieluoke
-language:
+language: zh-Hans
 timezone:
+keywords: 前端博客,JavaScript,html5,css3,Jquery,NodeJs,朝些罗可,zhaoxieluoke（#博客关键字）
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -67,7 +68,7 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: 
+deploy:
   type: git
   repo: https://github.com/zhaoxieluoke/zhaoxieluoke.github.io.git
   branch: master
