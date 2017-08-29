@@ -97,10 +97,12 @@
 <meta property="og:url" content="http://zhaoxieluoke.github.io/2017/08/28/前端代码规范/index.html">
 <meta property="og:site_name" content="五十日杂谈">
 <meta property="og:description" content="前端代码规范html规范1. 单标签不用写闭合2. img、link、input、hr、br3. 自定义属性要以data-开头  否则这将被认为是不规范的4. ul/ol的直接子元素只能是li5. section标签中要有标题标签">
-<meta property="og:updated_time" content="2017-08-29T01:20:01.648Z">
+<meta property="og:image" content="http://zhaoxieluoke.github.io/2017/08/28/前端代码规范/1.jpg">
+<meta property="og:updated_time" content="2017-08-29T01:24:42.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端代码规范">
 <meta name="twitter:description" content="前端代码规范html规范1. 单标签不用写闭合2. img、link、input、hr、br3. 自定义属性要以data-开头  否则这将被认为是不规范的4. ul/ol的直接子元素只能是li5. section标签中要有标题标签">
+<meta name="twitter:image" content="http://zhaoxieluoke.github.io/2017/08/28/前端代码规范/1.jpg">
 
 
 
@@ -381,11 +383,11 @@
         <h1 id="前端代码规范"><a href="#前端代码规范" class="headerlink" title="前端代码规范"></a>前端代码规范</h1><h2 id="html规范"><a href="#html规范" class="headerlink" title="html规范"></a>html规范</h2><h4 id="1-单标签不用写闭合"><a href="#1-单标签不用写闭合" class="headerlink" title="1. 单标签不用写闭合"></a>1. 单标签不用写闭合</h4><h4 id="2-img、link、input、hr、br"><a href="#2-img、link、input、hr、br" class="headerlink" title="2. img、link、input、hr、br"></a>2. img、link、input、hr、br</h4><h4 id="3-自定义属性要以data-开头-否则这将被认为是不规范的"><a href="#3-自定义属性要以data-开头-否则这将被认为是不规范的" class="headerlink" title="3. 自定义属性要以data-开头  否则这将被认为是不规范的"></a>3. 自定义属性要以data-开头  否则这将被认为是不规范的</h4><h4 id="4-ul-ol的直接子元素只能是li"><a href="#4-ul-ol的直接子元素只能是li" class="headerlink" title="4. ul/ol的直接子元素只能是li"></a>4. ul/ol的直接子元素只能是li</h4><h4 id="5-section标签中要有标题标签"><a href="#5-section标签中要有标题标签" class="headerlink" title="5. section标签中要有标题标签"></a>5. section标签中要有标题标签</h4><a id="more"></a>  
 <p>如果你用了section/aside/article/nav这种标签需要在里面写一个h1/h2/h3之类的标题标签，因为这四个标签可以划分章节，它们都是独立的章节，需要有标题，如果UI里面根本就没有标题呢？那你可以写一个隐藏的标题标签，如果出于SEO的目的，你不能直接display: none，而要用一些特殊的处理方式，如下套一个hidden-text的类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;style&gt;.hidden-text&#123;position: absolute; left: -9999px; right: -9999px&#125;&lt;/style&gt;</div><div class="line">&lt;section&gt;</div><div class="line">    &lt;h1 class=&quot;hidden-text&quot;&gt;Listing Detail&lt;/h1&gt;</div><div class="line">&lt;/section&gt;</div></pre></td></tr></table></figure></p>
 <h4 id="6-使用section可以划分章节-增强seo"><a href="#6-使用section可以划分章节-增强seo" class="headerlink" title="6. 使用section可以划分章节 增强seo"></a>6. 使用section可以划分章节 增强seo</h4><h4 id="7-样式要写在head标签里"><a href="#7-样式要写在head标签里" class="headerlink" title="7. 样式要写在head标签里"></a>7. 样式要写在head标签里</h4><p>样式不能写在body里，写在body里会导致渲染两次，特别是写得越靠后，可能会出现闪屏的情况，例如上面的已经渲染好了，突然遇到一个style标签，导致它要重新渲染，这样就闪了一下，不管是从码农的追求还是用户的体验，在body里面写style终究是一种下策。</p>
-<h4 id="8-特殊符号使用html实体"><a href="#8-特殊符号使用html实体" class="headerlink" title="8. 特殊符号使用html实体"></a>8. 特殊符号使用html实体</h4><pre><code> 符号  | 实体编码 
------- | :----:  
- ©       | \&amp;copy;  
- ¥       | \&amp;yen; 
- ®       | \&amp;reg;  
+<h4 id="8-特殊符号使用html实体"><a href="#8-特殊符号使用html实体" class="headerlink" title="8. 特殊符号使用html实体"></a>8. 特殊符号使用html实体</h4><pre><code> 符号  | 实体编码
+------ | :----:
+ ©       | \&amp;copy;
+ ¥       | \&amp;yen;
+ ®       | \&amp;reg;
  &gt;       | \&amp;gt;
  &lt;     | \&amp;lt;
  &amp;| \&amp;amp;
@@ -399,7 +401,8 @@
 <h4 id="11-不要在https的连接中写http的图片"><a href="#11-不要在https的连接中写http的图片" class="headerlink" title="11. 不要在https的连接中写http的图片"></a>11. 不要在https的连接中写http的图片</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=&quot;//static.chimeroi.com/hello-world.jpg&quot;&gt;</div></pre></td></tr></table></figure>
 <p>这样写就行了</p>
 <h2 id="css编码规范"><a href="#css编码规范" class="headerlink" title="css编码规范"></a>css编码规范</h2><h4 id="1-文件名规范"><a href="#1-文件名规范" class="headerlink" title="1. 文件名规范"></a>1. 文件名规范</h4><p>小写字母加中横线</p>
-<h4 id="2-属性书写规范"><a href="#2-属性书写规范" class="headerlink" title="2. 属性书写规范"></a>2. 属性书写规范</h4><h4 id="3-选择器一般不要超过3个-即使是用scss写"><a href="#3-选择器一般不要超过3个-即使是用scss写" class="headerlink" title="3. 选择器一般不要超过3个,即使是用scss写"></a>3. 选择器一般不要超过3个,即使是用scss写</h4><h4 id="4-减少对对样式的覆盖"><a href="#4-减少对对样式的覆盖" class="headerlink" title="4. 减少对对样式的覆盖"></a>4. 减少对对样式的覆盖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.house&#123;</div><div class="line">    margin-top: 20px;</div><div class="line">&#125;</div><div class="line">.house:first-child&#123;</div><div class="line">    margin-top: 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="2-属性书写规范"><a href="#2-属性书写规范" class="headerlink" title="2. 属性书写规范"></a>2. 属性书写规范</h4><p> <img src="1.jpg" alt=""></p>
+<h4 id="3-选择器一般不要超过3个-即使是用scss写"><a href="#3-选择器一般不要超过3个-即使是用scss写" class="headerlink" title="3. 选择器一般不要超过3个,即使是用scss写"></a>3. 选择器一般不要超过3个,即使是用scss写</h4><h4 id="4-减少对对样式的覆盖"><a href="#4-减少对对样式的覆盖" class="headerlink" title="4. 减少对对样式的覆盖"></a>4. 减少对对样式的覆盖</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.house&#123;</div><div class="line">    margin-top: 20px;</div><div class="line">&#125;</div><div class="line">.house:first-child&#123;</div><div class="line">    margin-top: 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>可以写成</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.house + .house&#123;</div><div class="line">    margin-top: 20px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>只有前面有.house的.house才能选中<br>还有这种</p>
