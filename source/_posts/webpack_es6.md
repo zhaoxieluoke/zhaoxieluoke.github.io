@@ -9,17 +9,17 @@ tags:
 npm init  
 ```
 
->安装babel webpack 
+>安装babel(包含所要应用的预设es-2015) webpack 
 webpack-derv-server
 ```
 npm install babel-core babel-loader babel-preset-es2015 webpack webpack-dev-server  --save-dev 
 ```
 
->配置scripts  test为默认命令 build为要使用的命令 在命令中同时对webpack-dev-server 进行配置 端口 热加载 
+>在package.json文件中配置scripts  test为默认命令 build为要使用的命令 在命令中同时对webpack-dev-server 进行配置 端口 热加载 
 ```
 "scripts":{
       "test": "echo \"Error: no test specified\" && exit 1",    
-      "build":"webpack-dev-server --port 8397 --hot --inline",  
+      "build":"webpack-dev-server --port 9527 --hot --inline",  
   }
 ```
 >创建webpack.config.js文件进行配置
